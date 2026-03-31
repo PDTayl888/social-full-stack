@@ -3,7 +3,7 @@ import axios from 'axios'
 export const token = () => localStorage.getItem('token')
 
 export const userClient = axios.create({
-     baseURL: 'https://social-full-stack-iu8s.onrender.com/:3000/api/users',
+     baseURL: 'https://social-full-stack-iu8s.onrender.com/api/users',
      headers: {
           Authorization: `Bearer ${token()}`
      }
