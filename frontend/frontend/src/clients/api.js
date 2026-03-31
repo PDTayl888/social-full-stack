@@ -3,14 +3,14 @@ import axios from 'axios'
 export const token = () => localStorage.getItem('token')
 
 export const userClient = axios.create({
-     baseURL: 'http://localhost:3000/api/users',
+     baseURL: 'https://social-full-stack-iu8s.onrender.com/:3000/api/users',
      headers: {
           Authorization: `Bearer ${token()}`
      }
 })
 
 export const postClient = axios.create({
-     baseURL: 'http://localhost:3000/api/posts'
+     baseURL: 'https://social-full-stack-iu8s.onrender.com/api/posts'
 })
 
 // use the latest version of the token in local storage
